@@ -10,5 +10,8 @@ export default {
   tooltip: {
     rippleBackgroundColor: "#1a237e",
     color: "#ffffff"
+  },
+  text: {
+    secondary:'#ffffff'
   }
 };
