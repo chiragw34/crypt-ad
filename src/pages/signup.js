@@ -12,6 +12,11 @@ import Card from "@material-ui/core/Card";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Zoom from "@material-ui/core/Zoom";
 import MenuItem from "@material-ui/core/MenuItem";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormControl from "@material-ui/core/FormControl";
+
 
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutlineRounded";
 
@@ -101,6 +106,7 @@ class signup extends Component {
   constructor() {
     super();
     this.state = {
+      role:'',
       firstName: "",
       lastName: "",
       flatNo: "",
@@ -130,6 +136,7 @@ class signup extends Component {
     this.setState({
       [event.target.name]: event.target.value
     });
+    console.log(this.state.role);
   };
 
   render() {
@@ -154,6 +161,52 @@ class signup extends Component {
 
         <form noValidate onSubmit={this.handleSubmit}>
           <Grid container spacing={0}>
+            <Grid item xs={12} className={classes.subTitle}>
+              <Typography variant="h6" color="primary">
+                Role
+              </Typography>
+              <hr className={classes.underline} />
+            </Grid>
+            <Grid item xs={6}>
+              <Card className={classes.card} elevation={0}>
+                <Typography variant="h6" color="textPrimary">
+                  Select your role :
+                </Typography>
+              </Card>
+            </Grid>
+            <Grid item xs={6}>
+              <Card className={classes.card} elevation={0}>
+                <FormControl component="fieldset">
+                  <RadioGroup
+                    value={this.value}
+                    onChange={this.handleChange}
+                    row
+                  >
+                    <FormControlLabel
+                      value="Advertiser"
+                      name="role"
+                      control={<Radio color="primary" />}
+                      label="Advertiser"
+                      labelPlacement="bottom"
+                    />
+                    <FormControlLabel
+                      value="publisher"
+                      name="role"
+                      control={<Radio color="primary" />}
+                      label="Publisher"
+                      labelPlacement="bottom"
+                    />
+                    <FormControlLabel
+                      value="both"
+                      name="role"
+                      control={<Radio color="primary" />}
+                      label="Both"
+                      labelPlacement="bottom"
+                    />
+                  </RadioGroup>
+                </FormControl>
+              </Card>
+            </Grid>
             <Grid item xs={12} className={classes.subTitle}>
               <Typography variant="h6" color="primary">
                 Name
