@@ -39,7 +39,7 @@ class navbar extends Component {
                     to="/"
                     className={classes.title}
                   >
-                    CRYPT-AD
+                    Crypt-Ad
                   </Typography>
                   <Typography
                     color="inherit"
@@ -65,7 +65,7 @@ class navbar extends Component {
                     to="/"
                     className={classes.title}
                   >
-                    CRYPT-AD
+                    Crypt-Ad
                   </Typography>
                   <Typography
                     color="inherit"

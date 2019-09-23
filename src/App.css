@@ -22,6 +22,6 @@
 }
 
 .container {
-  margin: 80px auto 0 auto; /* top right bottom left */
+  margin: 80px auto 200px auto; /* top right bottom left */
   max-width: 1100px;
 }
