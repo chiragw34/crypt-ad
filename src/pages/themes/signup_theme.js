@@ -28,12 +28,13 @@ export default {
     margin: 0,
     display: "block",
     padding: 0
-    },
-    button: {
-      margin:30
-    },
-    smallText: {
-        fontSize: 'large',
-    fontFamily: 'sans-serif'
-    }
+  },
+  button: {
+    margin: 30,
+    position: "relative"
+  },
+  smallText: {
+    fontSize: "medium",
+    fontFamily: "sans-serif"
+  }
 };
