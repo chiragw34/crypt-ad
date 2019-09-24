@@ -16,6 +16,7 @@ import home from "./pages/home";
 import login from "./pages/login";
 import signup from "./pages/signup";
 import aboutus from './pages/aboutus';
+import newCampaign from './pages/newCampaign';
 
 // Redux
 // import { Provider } from "react-redux";
@@ -35,6 +36,7 @@ function App() {
             <Route exact path="/login" component={login} />
             <Route exact path="/signup" component={signup} />
             <Route exact path="/aboutus" component={aboutus} />
+            <Route exact path="/newCampaign" component={newCampaign} />
           </Switch>
         </div>
       </Router>

@@ -7,6 +7,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
+import Add from "@material-ui/icons/AddRounded";
 
 import themeFile from "../../util/theme";
 const styles = {
@@ -24,7 +25,7 @@ const styles = {
 class navbar extends Component {
   render() {
     const { classes } = this.props;
-    let authenticated = false;
+    let authenticated = !false;
     return (
       <div className={classes.root}>
         <AppBar>
@@ -53,6 +54,10 @@ class navbar extends Component {
                 </div>
                 <Button color="inherit" component={Link} to="/login">
                   Username
+                </Button>
+
+                <Button color="inherit" component={Link} to="/newCampaign" variant='outlined'>
+                  <Add /> New Campaign
                 </Button>
               </Fragment>
             ) : (
