@@ -18,8 +18,7 @@ export default {
     margin: "2px auto 2px auto"
   },
   subTitle: {
-    marginTop: 60,
-    padding: 0
+    marginTop: 10,
   },
   underline: {
     color: themeFile.palette.primary1Color,
@@ -36,5 +35,9 @@ export default {
   smallText: {
     fontSize: "medium",
     fontFamily: "sans-serif"
+  },
+  imgLogo: {
+    padding: 10,
+    fontSize: "10.1875rem"
   }
 };

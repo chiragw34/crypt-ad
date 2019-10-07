@@ -8,7 +8,7 @@ export default {
   pageTitle: {
     textAlign: "center",
     padding: 5,
-    margin: "100px auto 10px auto"
+    margin: "15px auto 10px auto"
   },
   button: {
     margin: 30,
@@ -33,7 +33,11 @@ export default {
   typography: {
     useNextVariants: true
   },
-    textField: {
-      marginBottom: 20
+  textField: {
+    marginBottom: 20
+  },
+  imgLogo: {
+    padding:10,
+    fontSize: "10.1875rem"
   }
 };

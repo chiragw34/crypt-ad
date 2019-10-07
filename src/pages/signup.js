@@ -16,8 +16,7 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
-
-
+import AccountCircle from "@material-ui/icons/AccountCircleRounded";
 import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutlineRounded";
 
 const styles = {
@@ -154,6 +153,7 @@ class signup extends Component {
         <Zoom in={true}>
           <Grid container className={classes.form} spacing={1}>
             <Grid item xs={12} className={classes.pageTitle}>
+              <AccountCircle color="primary" className={classes.imgLogo} />
               <Typography
                 variant="h3"
                 color="textPrimary"

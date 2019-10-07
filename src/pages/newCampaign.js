@@ -19,7 +19,6 @@ import {
 } from "@material-ui/pickers";
 import Add from "@material-ui/icons/AddRounded";
 
-
 import themeFile from "./themes/newCapmaign_theme";
 
 const styles = {
@@ -30,13 +29,17 @@ class newCampaign extends Component {
   constructor() {
     super();
     this.state = {
+      cName: "",
       cStartDate: null,
       cEndDate: null,
       cTimeFrom: null,
-			cTimeTill: null,
-			cProdDescription: '',
-			cLandingUrl:'',
-      errors: {}
+      cTimeTill: null,
+      cProdDescription: "",
+      cLandingUrl: "",
+      bidStart: 0,
+      bidEnd: 0,
+      errors: {},
+      loading: false
     };
   }
 
@@ -211,8 +214,8 @@ class newCampaign extends Component {
                   onChange={this.handleImageChange}
                 />
               </Card>
-						</Grid>
-						<Grid item sm={8}/>
+            </Grid>
+            <Grid item sm={8} />
 
             <Grid item sm={4}>
               <Card className={classes.card} elevation={0}>

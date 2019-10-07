@@ -23,7 +23,7 @@ import newCampaign from './pages/newCampaign';
 // import store from "./redux/store";
 
 const theme = createMuiTheme(themeFile);
-
+console.log(createMuiTheme());
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
