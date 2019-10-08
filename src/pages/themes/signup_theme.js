@@ -8,7 +8,8 @@ export default {
     margin: "5px auto 10px auto"
   },
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    padding: "1% 28px 2% 28px"
   },
   bottom: {
     textAlign: "center"
@@ -18,7 +19,7 @@ export default {
     margin: "2px auto 2px auto"
   },
   subTitle: {
-    marginTop: 10,
+    marginTop: 10
   },
   underline: {
     color: themeFile.palette.primary1Color,
@@ -29,8 +30,8 @@ export default {
     padding: 0
   },
   button: {
-    margin: 30,
-    position: "relative"
+    margin: "2% 3% 2% 0",
+    float: "right"
   },
   smallText: {
     fontSize: "medium",
@@ -39,5 +40,12 @@ export default {
   imgLogo: {
     padding: 10,
     fontSize: "10.1875rem"
+  },
+  main: {
+    marginTop: "15%"
+  },
+  title: {
+    padding: 5,
+    marginTop: "1%"
   }
 };

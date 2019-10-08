@@ -29,7 +29,7 @@ class navbar extends Component {
     return (
       <div className={classes.root}>
         <AppBar>
-          <Toolbar className="nav-container" width="100%">
+          <Toolbar className="nav-container" width="100%"> 
             {authenticated ? (
               <Fragment>
                 <div className={classes.root}>

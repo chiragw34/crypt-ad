@@ -17,7 +17,8 @@
     "redux-thunk": "^2.3.0",
     "date-fns": "next",
     "@material-ui/pickers": "latest",
-    "@date-io/date-fns": "latest"
+    "@date-io/date-fns": "latest",
+    "reactstrap": "8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

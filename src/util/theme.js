@@ -20,8 +20,8 @@ export default {
       contrastText: "#263238"
     },
     secondary: {
-      light: "rgba(255, 128, 171, 1)",
-      main: "#607d8b",
+      light: "#607d8b",
+      main: "rgba(255, 128, 171, 1)",
       dark: "rgba(96, 125, 139, 0.73)",
       contrastText: "#263238"
     },

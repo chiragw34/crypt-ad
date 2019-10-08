@@ -3,18 +3,19 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
-import axios from "axios";
+// import axios from "axios";
 
 import themeFile from "./util/theme";
 
 // Components
 import Navbar from "./components/layout/navbar";
+import Footer from './components/layout/footer';
 // import AuthRoute from "./util/AuthRoute";
 
 // Pages
 import home from "./pages/home";
 import login from "./pages/login";
-import signup from "./pages/signup";
+import signup from "./pages/signup/signup";
 import aboutus from './pages/aboutus';
 import newCampaign from './pages/newCampaign';
 
@@ -38,6 +39,9 @@ function App() {
             <Route exact path="/aboutus" component={aboutus} />
             <Route exact path="/newCampaign" component={newCampaign} />
           </Switch>
+        </div>
+        <div className='footer'>
+          <Footer />
         </div>
       </Router>
       {/* </Provider> */}
