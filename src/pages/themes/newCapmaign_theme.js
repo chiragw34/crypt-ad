@@ -2,9 +2,12 @@ import themeFile from '../../util/theme.js';
 
 export default {
   ...themeFile,
+  main: {
+    padding:'0 5% 3% 5%'
+  },
   pageTitle: {
     textAlign: "center",
-    marginTop: 100,
+    marginTop: '5%',
     marginBottom: 50
   },
   textField: {

@@ -14,11 +14,12 @@ const styles = {
   ...themeFile,
   title: {
     textDeoration: "none",
-    padding: 5,
-    margin: "5px 20px 5px 10px"
+    padding: "5px 5px 0px 5px",
+    margin: "5px 20px 0px 10px"
   },
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    margin: "5px 0px 0px 0px"
   }
 };
 
@@ -27,72 +28,84 @@ class navbar extends Component {
     const { classes } = this.props;
     let authenticated = !false;
     return (
-      <div className={classes.root}>
-        <AppBar>
-          <Toolbar className="nav-container" width="100%"> 
-            {authenticated ? (
-              <Fragment>
-                <div className={classes.root}>
-                  <Typography
-                    variant="h4"
-                    color="inherit"
-                    component={Link}
-                    to="/"
-                    className={classes.title}
-                  >
-                    Crypt-Ad
-                  </Typography>
-                  <Typography
-                    color="inherit"
-                    variant="h5"
-                    component={Link}
-                    to="/aboutus"
-                    className={classes.title}
-                  >
-                    About us
-                  </Typography>
-                </div>
-                <Button color="inherit" component={Link} to="/login">
-                  Username
-                </Button>
+      <AppBar elevation={24}>
+        <Toolbar className={classes.root} width="100%">
+          {authenticated ? (
+            <Fragment>
+              <div className={classes.root}>
+                <Typography
+                  variant="h3"
+                  color="inherit"
+                  component={Link}
+                  to="/"
+                  className={classes.title}
+                >
+                  Crypt-Ad
+                </Typography>
+                <Typography
+                  variant="h6"
+                  color="inherit"
+                  component={Link}
+                  to="/dashboard"
+                  className={classes.title}
+                >
+                  Dashboard
+                </Typography>
+                <Typography
+                  color="inherit"
+                  variant="h6"
+                  component={Link}
+                  to="/aboutus"
+                  className={classes.title}
+                >
+                  About us
+                </Typography>
+              </div>
+              <Button color="inherit" component={Link} to="/login">
+                Username
+              </Button>
 
-                <Button color="inherit" component={Link} to="/newCampaign" variant='outlined'>
-                  <Add /> New Campaign
-                </Button>
-              </Fragment>
-            ) : (
-              <Fragment>
-                <div className={classes.root}>
-                  <Typography
-                    variant="h4"
-                    color="inherit"
-                    component={Link}
-                    to="/"
-                    className={classes.title}
-                  >
-                    Crypt-Ad
-                  </Typography>
-                  <Typography
-                    color="inherit"
-                    variant="h5"
-                    component={Link}
-                    to="/aboutus"
-                    className={classes.title}
-                  >
-                    About us
-                  </Typography>
-                </div>
-                <Button color="inherit" component={Link} to="/signup">
-                  SignUp
-                </Button>
-                <Button color="inherit" component={Link} to="/login">
-                  Login
-                </Button>
-              </Fragment>
-            )}
-          </Toolbar>
-        </AppBar>
-      </div>
+              <Button
+                color="inherit"
+                component={Link}
+                to="/newCampaign"
+                variant="outlined"
+              >
+                <Add /> New Campaign
+              </Button>
+            </Fragment>
+          ) : (
+            <Fragment>
+              <div className={classes.root}>
+                <Typography
+                  variant="h3"
+                  color="inherit"
+                  component={Link}
+                  to="/"
+                  className={classes.title}
+                >
+                  Crypt-Ad
+                </Typography>
+                <Typography
+                  color="inherit"
+                  variant="h5"
+                  component={Link}
+                  to="/aboutus"
+                  className={classes.title}
+                >
+                  About us
+                </Typography>
+              </div>
+              <Button color="inherit" component={Link} to="/signup">
+                SignUp
+              </Button>
+              <Button color="inherit" component={Link} to="/login">
+                Login
+              </Button>
+            </Fragment>
+          )}
+        </Toolbar>
+      </AppBar>
     );
   }
 }

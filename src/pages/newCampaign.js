@@ -94,7 +94,7 @@ class newCampaign extends Component {
     const { errors } = this.state;
     var loading = false;
     return (
-      <Fragment>
+      <Card elevation={24} className={classes.main}>
         <Typography
           variant="h3"
           className={classes.pageTitle}
@@ -281,7 +281,7 @@ class newCampaign extends Component {
             </Grid>
           </Grid>
         </form>
-      </Fragment>
+      </Card>
     );
   }
 }

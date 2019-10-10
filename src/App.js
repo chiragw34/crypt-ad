@@ -9,15 +9,16 @@ import themeFile from "./util/theme";
 
 // Components
 import Navbar from "./components/layout/navbar";
-import Footer from './components/layout/footer';
+import Footer from "./components/layout/footer";
 // import AuthRoute from "./util/AuthRoute";
 
 // Pages
 import home from "./pages/home";
 import login from "./pages/login";
 import signup from "./pages/signup/signup";
-import aboutus from './pages/aboutus';
-import newCampaign from './pages/newCampaign';
+import aboutus from "./pages/aboutus";
+import newCampaign from "./pages/newCampaign";
+import dashboard from "./pages/dsahboard/dashboard";
 
 // Redux
 // import { Provider } from "react-redux";
@@ -31,16 +32,22 @@ function App() {
       {/* <Provider store={store}> */}
       <Router>
         <Navbar />
-        <div className="container">
-          <Switch>
+
+        <Switch>
+          <div className="container">
             <Route exact path="/" component={home} />
             <Route exact path="/login" component={login} />
             <Route exact path="/signup" component={signup} />
             <Route exact path="/aboutus" component={aboutus} />
             <Route exact path="/newCampaign" component={newCampaign} />
-          </Switch>
-        </div>
-        <div className='footer'>
+          </div>
+        </Switch>
+        <Switch>
+          <div className="dashboard-container">
+            <Route exact path="/dashboard" component={dashboard} />
+          </div>
+        </Switch>
+        <div className="footer">
           <Footer />
         </div>
       </Router>
