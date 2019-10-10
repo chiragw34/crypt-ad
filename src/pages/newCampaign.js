@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component} from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import "date-fns";
 import DateFnsUtils from "@date-io/date-fns";
