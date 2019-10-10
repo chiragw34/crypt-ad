@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
+import { Link } from 'react-router-dom';
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
@@ -113,6 +114,13 @@ class signup extends Component {
                 </Fragment>
               )}
             </Fragment>
+          </Paper>
+        </Card>
+        <Card elevation={0} className={classes.small}>
+          <Paper align="center">
+            <small className={classes.smallText}>
+              Already have an account? Login <Link to="/login">here</Link>
+            </small>
           </Paper>
         </Card>
       </Fragment>

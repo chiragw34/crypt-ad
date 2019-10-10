@@ -16,7 +16,7 @@ export default {
   },
   card: {
     padding: 10,
-    margin: "2px auto 2px auto"
+    margin: "1% auto 1% auto"
   },
   subTitle: {
     marginTop: 10
@@ -33,19 +33,23 @@ export default {
     margin: "2% 3% 2% 0",
     float: "right"
   },
+  small: {
+    marginTop:'5%'
+  },
   smallText: {
     fontSize: "medium",
-    fontFamily: "sans-serif"
+    fontFamily: "sans-serif",
+    margin: "3% auto 2% auto"
   },
   imgLogo: {
     padding: 10,
     fontSize: "10.1875rem"
   },
   main: {
-    marginTop: "15%"
+    marginTop: "1%"
   },
   title: {
     padding: 5,
     marginTop: "1%"
-  }
+  },
 };
